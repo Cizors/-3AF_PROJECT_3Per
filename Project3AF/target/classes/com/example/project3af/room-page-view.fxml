@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3af.controllers.RoomPageController">
+    <children>
+        <HBox alignment="CENTER_LEFT" opacity="0.8" prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: #5DADE2; -fx-border-color: gray; -fx-border-width: 0 0 3px 0;">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="83.0">
+                    <image>
+                        <Image url="@../../../images/IsTudentLogo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Text fx:id="HomeName" onMouseClicked="#OpenLandlordMainPage" strokeType="OUTSIDE" strokeWidth="0.0" text="IsTudent">
+                    <HBox.margin>
+                        <Insets right="900.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Tahoma Bold" size="24.0" />
+                    </font>
+                </Text>
+            <Button fx:id="RegisterPageButton" mnemonicParsing="false" onAction="#OpenRegisterPage" prefHeight="50.0" prefWidth="90.0" style="-fx-background-radius: 15px; -fx-background-color: #5DADE2; -fx-border-color: gray; -fx-border-radius: 15px;" text="Cadastrar">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ProfileIcon" mnemonicParsing="false" onAction="#OpenLandlordPage" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 30px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 30px;" text="P">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </HBox>
+      <Text layoutX="30.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarto perto ao Campus 1, CESMAC" wrappingWidth="250.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="30.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R. Cônego Machado, 984 - Farol, Maceió - AL, 57051-160" wrappingWidth="235.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text layoutX="30.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre este Quarto">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Text>
+      <Text layoutX="385.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regras do Quarto">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Text>
+      <Text layoutX="30.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso Aceito: Medicina">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="200.0" fitWidth="250.0" layoutX="30.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/house-landscape-template.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="740.0" layoutY="500.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <Text layoutX="740.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Características do Quarto">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="750.0" layoutY="505.0" mnemonicParsing="false" selected="true" text="Wi-Fi" />
+      <CheckBox layoutX="940.0" layoutY="545.0" mnemonicParsing="false" selected="true" text="Ar-condicionado" />
+      <CheckBox layoutX="940.0" layoutY="505.0" mnemonicParsing="false" selected="true" text="Mobiliado" />
+      <CheckBox layoutX="750.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="151.0" selected="true" text="Espaço de estudo" textAlignment="JUSTIFY" />
+      <CheckBox indeterminate="true" layoutX="940.0" layoutY="625.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="139.0" text="Tranca na porta" textAlignment="JUSTIFY" />
+      <CheckBox layoutX="750.0" layoutY="545.0" mnemonicParsing="false" selected="true" text="Lareira Interna" />
+      <CheckBox layoutX="750.0" layoutY="585.0" mnemonicParsing="false" selected="true" text="Detector de Fumaça" />
+      <CheckBox layoutX="940.0" layoutY="585.0" mnemonicParsing="false" selected="true" text="Televisão" />
+      <TextArea editable="false" layoutX="30.0" layoutY="500.0" prefHeight="200.0" prefWidth="335.0" style="-fx-border-color: gray;" text="Quarto confortável e moderno, ideal para estudantes universitários! Localizado próximo à universidade, oferece um ambiente tranquilo e funcional para estudo e descanso. O espaço é mobiliado, incluindo cama, escrivaninha, cadeira ergonômica e guarda-roupa, além de acesso a Wi-Fi de alta velocidade. Áreas comuns como cozinha equipada, sala de estar e lavanderia estão disponíveis para uso compartilhado. Perfeito para quem busca praticidade e proximidade com o campus. Ambiente seguro e acolhedor, com fácil acesso a transporte público e comércios locais." wrapText="true" />
+      <TextArea layoutX="385.0" layoutY="500.0" prefHeight="200.0" prefWidth="335.0" style="-fx-border-color: gray;" text="- Não é permitido fumar em nenhuma área do imóvel;&#10;- Sem barulho alto depois das 22h para garantir o conforto de todos;&#10;- Visitantes são permitidos até às 20h, com aviso prévio;&#10;- Mantenha os espaços compartilhados organizados após o uso;&#10;- Animais de estimação não são permitidos;&#10;- O uso de eletrodomésticos pessoais deve ser previamente autorizado;&#10;- Respeite a convivência e os horários dos demais moradores;&#10;- Não é permitido realizar festas ou eventos no local;&#10;- Qualquer dano ao imóvel ou mobília será de responsabilidade do locatário;&#10;- O aluguel é exclusivamente para uso residencial e acadêmico." wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextArea>
+      <HBox layoutX="305.0" layoutY="120.0" prefHeight="295.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <Text layoutX="315.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$500 mês">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Text>
+      <HBox layoutX="315.0" layoutY="195.0" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10; -fx-border-width: 1;" />
+      <HBox layoutX="315.0" layoutY="160.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10; -fx-border-width: 2;" />
+      <Text layoutX="322.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrada">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Line endX="-100.0" endY="46.0" layoutX="540.0" layoutY="162.0" startX="-100.0" />
+      <Text layoutX="445.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saída">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12/01/2024">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="445.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12/06/2024">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="315.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #5DADE2; -fx-background-radius: 10;" text="RESERVAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="322.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hóspedes">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Hóspedes">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$3.000">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="315.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$500 x 6" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="315.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taxa de Limpeza" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="520.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$125" wrappingWidth="49.00001525878906">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Line endX="269.0" layoutX="305.0" layoutY="375.0" startX="1.0" />
+      <Text layoutX="315.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R$3.125" wrappingWidth="56.16406440734863">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <CheckBox indeterminate="true" layoutX="750.0" layoutY="665.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="151.0" text="Máquina de lavar" textAlignment="JUSTIFY" />
+      <CheckBox indeterminate="true" layoutX="940.0" layoutY="665.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="89.0" text="Cozinha" textAlignment="JUSTIFY" />
+      <HBox layoutX="585.0" layoutY="290.0" prefHeight="125.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: gray; -fx-border-radius: 20;" />
+      <HBox layoutX="585.0" layoutY="120.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="240.0" prefWidth="180.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="P">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pessoa">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Locador">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="240.0" prefWidth="120.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="000">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="avaliações">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="300.0" startX="180.0" startY="-0.8526949882507324">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0,00 ★">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="estrelas">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Line endX="300.0" startX="180.0" startY="-0.8526949882507324">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="anos hospedando">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="80.0" layoutX="575.0" layoutY="350.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/Whatsapp%20Icon.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="635.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+55 (82) 9 1111-1111" wrappingWidth="235.0">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="600.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contato do Locador:">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avaliação: 5,00 ★">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Text>
+      <Line endX="250.0" layoutX="30.0" layoutY="415.0" startX="1.0" />
+      <Line endX="250.0" layoutX="30.0" layoutY="385.0" startX="1.0" />
+      <Line endX="250.0" layoutX="30.0" layoutY="340.0" startX="1.0" />
+      <Line endX="250.0" layoutX="30.0" layoutY="445.0" startX="1.0" />
+      <HBox layoutX="905.0" layoutY="140.0" prefHeight="135.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <HBox layoutX="1085.0" layoutY="140.0" prefHeight="135.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <HBox layoutX="905.0" layoutY="280.0" prefHeight="135.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <HBox layoutX="1085.0" layoutY="280.0" prefHeight="135.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: gray; -fx-border-radius: 10;" />
+      <Text layoutX="905.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentários sobre o Quarto" wrappingWidth="214.8984375">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="ProfileIcon2" layoutX="910.0" layoutY="235.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="M">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="ProfileIcon21" layoutX="1090.0" layoutY="235.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="C">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="ProfileIcon22" layoutX="910.0" layoutY="375.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="T">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="ProfileIcon221" layoutX="1090.0" layoutY="375.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 60px; -fx-background-color: gray; -fx-border-color: black; -fx-border-radius: 60px;" text="L">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text layoutX="915.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;O quarto é super confortável e perfeito para focar nos estudos!&quot;" wrappingWidth="162.00000762939453">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mariana">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="junho 2023">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thales">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dezembro 2023">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1130.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carlos">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1130.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dezembro 2024">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1130.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luana">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1130.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="junho 2024">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1095.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A localização é excelente, bem perto da universidade e com fácil acesso ao transporte público.&quot;" wrappingWidth="162.00000762939453">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="1095.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;O ambiente é limpo, organizado e os espaços compartilhados são muito bem cuidados.&quot;" wrappingWidth="162.00000762939453">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="915.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;A internet é rápida e o espaço para estudo é ideal para quem precisa de silêncio e concentração.&quot;" wrappingWidth="162.00000762939453">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
